@@ -6,7 +6,7 @@ type Body struct {
 	Data interface{} `json:"data,omitempty"`
 }
 
-func Response (resp interface{}, err error) Body {
+func Response(resp interface{}, err error) Body {
 	var body Body
 	if err != nil {
 		body.Code = -1
